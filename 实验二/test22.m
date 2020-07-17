@@ -1,0 +1,9 @@
+x1=[0,1,2,3,4,3,2,1,0];n1=-2:6;
+[y1,n2]=sigshift(x1,n1,2);
+[y2,n3]=sigfold(x1,n1);
+subplot(3,1,1);stem(n1,x1);title('序列x1')
+xlabel('n');ylabel('x1(n)');
+subplot(3,1,2);stem(n2,y1);title('序列移位')
+xlabel('n');ylabel('y1(n)');
+subplot(3,1,3);stem(n3,y2);title('序列折叠')
+xlabel('n');ylabel('y2(n)');
