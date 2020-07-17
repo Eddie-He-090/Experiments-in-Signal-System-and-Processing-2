@@ -1,0 +1,9 @@
+n=[0:10];
+        x3=stepseq(0,0,10)-stepseq(5,0,10);
+        subplot(2,2,3);stem(n,x3);title('矩形序列');
+        xlabel('n');ylabel('x(n)');
+        n=[0:20];
+        x4=sin(0.3*n);
+        subplot(2,2,4);stem(n,x4);title('正弦序列');
+        xlabel('n');
+        ylabel('x(n)');
